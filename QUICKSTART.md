@@ -5,7 +5,7 @@
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/Food-Delivery-Prediction.git
+git clone https://github.com/Ansh0330/Food-Delivery-Prediction.git
 cd Food-Delivery-Prediction
 ```
 
@@ -192,7 +192,7 @@ For issues or questions:
 
 1. Check GitHub Issues
 2. Review troubleshooting section above
-3. Contact: your-email@example.com
+3. Contact: meanshbhardwaj@gmail.com
 
 ---
 

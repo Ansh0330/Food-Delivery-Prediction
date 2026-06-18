@@ -81,7 +81,7 @@ Food-Delivery-Prediction/
 1. **Clone the repository:**
 
 ```bash
-git clone https://github.com/yourusername/Food-Delivery-Prediction.git
+git clone https://github.com/Ansh0330/Food-Delivery-Prediction.git
 cd Food-Delivery-Prediction
 ```
 
@@ -143,8 +143,10 @@ This notebook includes:
 
 ### Random Forest Regressor (Default)
 
-- **Test MAE:** Lower error than Decision Tree
-- **Test R² Score:** Improved generalization
+- **Test MAE:** 7.06 minutes
+- **Test MSE:** 100.12
+- **Test RMSE:** 10.01 minutes
+- **Test R² Score:** 0.78
 
 ### Optimized Random Forest Regressor
 
@@ -156,12 +158,12 @@ This notebook includes:
   - `min_samples_leaf`: 3
 
 - **Performance:**
-  - **Test MAE:** ~0.50 minutes
-  - **Test MSE:** ~0.40
-  - **Test RMSE:** ~0.63 minutes
-  - **Test R² Score:** 0.94
+  - **Test MAE:** 6.88 minutes
+  - **Test MSE:** 92.53
+  - **Test RMSE:** 9.62 minutes
+  - **Test R² Score:** 0.79
 
-**Improvement:** The optimized model achieved an R² improvement from 0.92 to 0.94 (approximately 2% improvement) and significantly reduced error metrics through hyperparameter tuning.
+**Improvement:** The optimized model achieved a 1.4% improvement in R² (from 0.78 to 0.79) and reduced MAE by 0.18 minutes through hyperparameter tuning, demonstrating consistent performance gains.
 
 ## 🔍 Key Findings
 
@@ -194,17 +196,15 @@ This notebook includes:
 
 ## 📊 Results
 
-### Overfitting vs Underfitting Analysis
+### Model Performance Comparison
 
-**Method Used:** Comparing Training vs Test Performance
+| Model                   | MAE   | MSE    | RMSE  | R² Score |
+| ----------------------- | ----- | ------ | ----- | -------- |
+| Decision Tree           | 10.56 | 243.24 | 15.06 | 0.49     |
+| Random Forest (Default) | 7.06  | 100.12 | 10.01 | 0.78     |
+| Optimized Random Forest | 6.88  | 92.53  | 9.62  | 0.79     |
 
-| Metric           | Training | Test | Gap   |
-| ---------------- | -------- | ---- | ----- |
-| Decision Tree R² | 1.00     | 0.49 | 0.51  |
-| Random Forest R² | 0.92     | 0.90 | 0.02  |
-| Optimized RF R²  | 0.94+    | 0.94 | ~0.00 |
-
-**Conclusion:** The Decision Tree exhibits severe overfitting (huge gap), while the Random Forest ensemble provides excellent generalization with minimal train/test gap.
+**Analysis:** The Optimized Random Forest model outperforms the default Random Forest with lower error metrics. Despite the Decision Tree achieving perfect training fit (R²=1.00), it severely overfits and fails on test data (R²=0.49). The Random Forest ensemble provides superior generalization with a 0.79 R² score on unseen data.
 
 ### Model Selection
 
@@ -274,7 +274,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 👤 Author
 
-**Ansh Bhardwaj**
+**Ansh Kotnala**
 
 ## 🙏 Acknowledgments
 
@@ -287,7 +287,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 For questions or inquiries, please reach out through:
 
 - GitHub Issues
-- Email: your-email@example.com
+- Email: meanshbhardwaj@gmail.com
 
 ---
 
